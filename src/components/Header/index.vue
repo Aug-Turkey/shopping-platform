@@ -33,7 +33,7 @@
     <div class="bottom">
       <h1 class="logoArea">
         <router-link class="logo" to="/home">
-          <img src="./images/logo.png">
+          <img src="https://img10.360buyimg.com/img/jfs/t1/137458/22/20884/367319/61d7e10cE227befe9/7472fc868c0088dc.gif">
         </router-link>
       </h1>
       <div class="searchArea">
@@ -145,8 +145,7 @@ export default {
 
       .logo {
         img {
-          width: 175px;
-          margin: 25px 45px;
+          height: 110px;
         }
       }
     }

@@ -55,6 +55,7 @@ const actions = {
   async userLogout({ commit }) {
     let result = await reqLogout()
     if (result.code === 200) {
+      localStorage.removeItem('TOKEN')
       commit('CLEAR')
       return 'ok'
     } else {
@@ -76,7 +77,6 @@ const mutations = {
     // 清空仓库中相关用户信息
     state.token = ''
     state.userInfo = {}
-    localStorage.removeItem('TOKEN')
   }
 }
 const getters = {}
